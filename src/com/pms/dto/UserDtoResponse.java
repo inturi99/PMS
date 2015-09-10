@@ -16,7 +16,7 @@ public class UserDtoResponse {
            this.records = records;
     }
 
-    @JsonProperty("Record")
+    @JsonProperty("data")
     public UserDto getRecords() {
         return records;
     }

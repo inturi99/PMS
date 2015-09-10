@@ -16,20 +16,13 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
-	var obj ="jtStartIndex=0&jtPageSize=3";
-	var myUrl = "http://localhost:8000/PMS/usertable/getAllUsers";
+	var obj ="jtStartIndex=0&jtPageSize=16";
+	var myUrl = "http://localhost:8000/PMS/usertable/getAllUsers?jtStartIndex=0&jtPageSize=16";
 	var myVarible=[];
 	$('#example').DataTable( {
         "processing": true,
         "serverSide": true,
-        "ajax": {
-        	url : myUrl,
-			type : "POST",
-			data : "obj",
-			dataType : "json",
-			contentType : "application/x-www-form-urlencoded",
-			
-        },
+        "ajax": myUrl,
         "columns": [
             { "data": "UserId" },
             { "data": "UserName" },

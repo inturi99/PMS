@@ -23,7 +23,7 @@ public class UserDtoListResponse {
 
     
 
-    @JsonProperty("Records")
+    @JsonProperty("data")
     public List<UserDto> getRecords() {
         return records;
     }
@@ -32,7 +32,7 @@ public class UserDtoListResponse {
         this.records = records;
     }
 
-    @JsonProperty("TotalRecordCount")
+    @JsonProperty("recordsTotal")
     public int getTotalRecordCount() {
         return totalRecordCount;
     }

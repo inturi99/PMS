@@ -32,7 +32,7 @@ public class UserController {
 	}
 
 	/* Table data load - This loads the data for the table */
-	@RequestMapping(value = "/usertable/getAllUsers", method = RequestMethod.POST)
+	@RequestMapping(value = "/usertable/getAllUsers", method = RequestMethod.GET)
 	@ResponseBody
 	public UserDtoListResponse getAllUsers(@RequestParam int jtStartIndex,
 			@RequestParam int jtPageSize) {
